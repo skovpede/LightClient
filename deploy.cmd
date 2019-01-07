@@ -107,6 +107,11 @@ IF EXIST "%DEPLOYMENT_SOURCE%\angular.json" (
   popd
 )
 
+echo source
+echo %DEPLOYMENT_SOURCE%
+echo target
+echo %DEPLOYMENT_TARGET%
+
 :: 4. KuduSync
 call :ExecuteCmd "%KUDU_SYNC_CMD%" -v 50 -f "%DEPLOYMENT_SOURCE%/dist" -t "%DEPLOYMENT_TARGET%" -n "%NEXT_MANIFEST_PATH%" -p "%PREVIOUS_MANIFEST_PATH%" -i ".git;.hg;.deployment;deploy.cmd;node_modules"
 IF !ERRORLEVEL! NEQ 0 goto error
