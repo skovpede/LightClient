@@ -1,0 +1,17 @@
+.d1 {
+    width: 46vw;
+}
+.d2 {
+    margin: 1em 0 0 1em;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1em 0 1em 0;
+    user-select: none;
+}
+.on{
+    background-color: #30ad3a;
+}
+.off{
+    border: 1px solid white;
+}
