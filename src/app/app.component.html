@@ -1,8 +1,9 @@
-
+<ng-container *ngFor="let s of switches">
+    <app-switch [on]="s.on" [name]="s.name"></app-switch>
+</ng-container>
+<!-- <app-switch [on]="true"></app-switch>
+<app-switch *ngFor="let s of switches"></app-switch>
+<app-switch></app-switch>
 <app-switch [on]="true"></app-switch>
 <app-switch></app-switch>
-<app-switch></app-switch>
-<app-switch></app-switch>
-<app-switch [on]="true"></app-switch>
-<app-switch></app-switch>
-<app-switch></app-switch>
+<app-switch></app-switch> -->
