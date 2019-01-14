@@ -1,5 +1,10 @@
 .d1 {
-    width: 46vw;
+    width: 92vw;
+}
+@media only screen and (min-width: 40em) {
+    .d1 {
+        width: 46vw;
+    }
 }
 .d2 {
     margin: 1em 0 0 1em;
